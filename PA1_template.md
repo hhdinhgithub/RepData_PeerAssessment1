@@ -233,15 +233,20 @@ After fill NA value
 ```
 ## [1] 10766.19
 ```
+
 After fill NA value, the mean and median value is same 10766.19
+
+The shape of the histogram remains the same as before and after fill NA values. However, the frequency counts increase. In this case, it seems that the data imputation strategy is needed for data analysis of aveage steps taken per day.
+
+
 
 ##4. Find the differences in activity patterns between weekdays and weekends.
 
-Create a new factor for Weekend or Weekday and Calculate average step per 5 minutes internval
+Create a new factor for weekend or weekday and Calculate average step per 5 minutes internval
 
 ```r
     weekends <- c("Saturday", "Sunday")
-    act_data2$daytype <- as.factor(ifelse(weekdays(act_data2$date) %in% weekends,"Weekends","Weekdays"))
+    act_data2$daytype <- as.factor(ifelse(weekdays(act_data2$date) %in% weekends,"weekend","weekday"))
     ave_steps_inv <- aggregate(steps ~ interval + daytype, act_data2, mean)
 ```
 Plot to compare Weekdays vs Weekends
