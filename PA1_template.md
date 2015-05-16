@@ -261,6 +261,5 @@ Plot to compare Weekdays vs Weekends
 
 ![plot of chunk unnamed-chunk-18](figure/unnamed-chunk-18-1.png) 
 
-The graph above shows the activity on the weekday has the greatest peak from average steps per 5 minutes interval (before 10:00AM). But the weekends activities have more peaks over a hundred spread out over the day compare to weekdays 
-This could be due to the fact that activities on weekdays mostly a work related, while activities in weekend may related to outdoor activities or sports.
+The graph above shows the activity on the weekday has the greatest peak from average steps per 5 minutes interval (before 10:00AM). But the weekend activities have more peaks over a hundred and spread out over the day compare to weekday. This could be due to the fact that activities on weekday mostly a work related, while activities in weekend may related to outdoor activities or sports.
 
